@@ -1,0 +1,45 @@
+</doctyoe html>
+
+<head>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Find all h1 elements that are children of a div element and apply a background to
+them</h1>
+
+<h3>abc</h3>
+<div>
+<!-- css should only be applied to h1 inside the div-->
+ <h1>div-1</h1>
+ <h1>div-2</h1>
+</div>
+
+<h3>xyz</h3>
+
+<button type="button">Change CSS Color</button>
+
+<script src="jquery-3.0.0.js"></script>
+<script>
+$(document).ready(function(){
+
+	$("button").click(function(){
+
+		$("div").children().css( "background-color", "red" );
+	});
+
+});
+
+
+</script>
+
+</body>
+
+</html>

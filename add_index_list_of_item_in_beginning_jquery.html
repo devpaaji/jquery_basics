@@ -1,0 +1,51 @@
+</doctyoe html>
+
+<head>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Write jQuery Code to add a <b> tag at the beginning of the list item, containing the index of the list item</h1>
+
+
+	<ui id="count">
+		<li>Html Tutorial</li>
+		<li>Mongodb Tutorial</li>
+		<li>Python Tutorial</li>
+
+	</ui>
+
+<button type="button">Add Index Item</button>
+
+<script src="jquery-3.0.0.js"></script>
+<script>
+
+var get_ul;
+$(document).ready(function(){
+
+get_ul = $("#count li");
+console.log(get_ul.length);
+
+	 $("button").click(function(){
+
+	 	for(var i = 0; i < get_ul.length; i++){
+			//$("ul").prepend("<b>" + i +"</b>");
+			$(get_ul[i]).prepend(" <b> " + i +" : </b> ");
+		}
+	});
+});
+
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+</doctyoe html>
+
+<head>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<body>
+<p id="click">Click me!</p>
+</body> 
+ 
+
+
+
+
+<script src="jquery-3.0.0.js"></script>
+<script>
+
+// http://stackoverflow.com/questions/5497073/how-to-differentiate-single-click-event-and-double-click-event
+// $(document).ready(function(){
+
+// 	$('#click').click(function(){
+// 		$(this).html("This is a click Event");
+
+// 	});
+
+// });
+
+// $(document).ready(function(){
+
+// 	$('#click').dblclick(function(){
+// 		$(this).htnl("This is a double click Event", setTimeout(2000));
+
+// 	});
+
+// });
+
+$("#click").bind("click", function(){  
+   $( "<p>This is a click Event</p>").appendTo('#click' );  
+});  
+
+
+$("#click").bind("dblclick", function(){  
+  $( "<p>This is a double-click Event</p>"  ).appendTo('#click');  
+}); 
+
+
+
+</script>
+
+</body>
+
+</html>
